@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Geo JSON</title>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!--D3 cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="Leaflet-Step-1/static/css/style.css">
+
+<!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+ 
+  <div class="container">
+    <a class ="navbar-brand"><img class="logo"  src="Leaflet-Step-1/static/data/logo_dvalue3.png" style="width:100px;height:35px;"></a>
+</div>
+
+      
+          <div class="container">
+            <div class="row">  
+                <div class="col-sm-1" style="background-color:lavenderblush;"></div>
+                <div class="col-sm-11" style="background-color:lavenderblush;">
+                 <!--<div class="col-xs-8 col-md-8"> --> 
+                    <h1>    United States Geological Survey  </h1>
+                    <br>
+                   
+                    <div id="map" style="width: 900px; height: 600px"></div>
+                    <br>
+                    <h2>The map above represents all Earthqueaks during the past 7 days. </h2>
+                    <p> You will have the oportunity to locate the most recent Earthqueaks around the globe.
+                        The Earthquake data location and  magnitud will be represented by a circle. Depends on
+                        the intensity the color and the zise of the circle will change. Also you will have a
+                        legend information on each Earthquake by clicking on the circle.  
+                    </p>
+                    <!-- The div where we will inject our map -->
+                    <!--<div id="map"></div>--> 
+                </div>   <!--  end col-xs-12 -->
+            </div> <!--row -->
+          </div> <!--end container -->
+
+
+          <div class="container">
+            <div class="row">  
+              <div class="col-sm-1" style="background-color:lavenderblush;"></div>
+              <div class="col-sm-11" style="background-color:lavenderblush;">
+                    <br>
+                    <div id="map1" style="width: 900px; height: 600px"></div>
+                    <br>
+                    <h2>The map above represents all Earthqueaks during the past 7 days and a Tectonic Plates Layer. </h2>
+                    <p> The Tectonic Plates Layer were added to provide information, so you can understant more about 
+                        the Earthquake and Tectonic Plates. You have the same functionality of the map above in addition to
+                        the layers.    
+                    </p>
+                  
+                </div>   <!--  end col-xs-12 -->
+            </div> <!--row -->
+          </div> <!--end container -->
+   
+      
+      </nav>    
+     
+    
+
+   
+
+</body>
+          <!-- API key -->
+          <script type="text/javascript" src="Leaflet-Step-1/static/js/config.js"></script>
+          <!-- Our JS -->
+          <script type="text/javascript" src="Leaflet-Step-1/static/js/logic.js"></script>
+</body>
+</html>
